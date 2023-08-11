@@ -38,17 +38,20 @@ function FeaturedCollection({
 }) {
   const image = collection.image;
   return (
-    <Link
-      className="featured-collection"
-      to={`/collections/${collection.handle}`}
-    >
-      {image && (
-        <div className="featured-collection-image">
-          <Image data={image} sizes="100vw" />
-        </div>
-      )}
-      <h1>{collection.title}</h1>
-    </Link>
+    <>
+      <Link
+        className="featured-collection"
+        to={`/collections/${collection.handle}`}
+      >
+        {image && (
+          <div className="featured-collection-image">
+            <Image data={image} sizes="100vw" />
+          </div>
+        )}
+        <img src="/kapital/kapital1back.jpeg" alt="hello!" width="50%" />
+        <h1>{collection.title}</h1>
+      </Link>
+    </>
   );
 }
 

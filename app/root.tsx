@@ -90,6 +90,7 @@ export default function App() {
       </head>
       <body>
         <Layout {...data}>
+          <h1>Hello, Nick</h1>
           <Outlet />
         </Layout>
         <ScrollRestoration />
